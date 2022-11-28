@@ -70,7 +70,7 @@ func (e EastMoney) QueryProfitPredict(ctx context.Context, secuCode string) (Pro
 	latency := time.Now().Sub(beginTime).Milliseconds()
 	logging.Debug(ctx, "EastMoney QueryProfitPredict "+apiurl+" end",
 		zap.Int64("latency(ms)", latency),
-		// zap.Any("resp", resp),
+		zap.Any("resp", resp),
 	)
 	if err != nil {
 		return nil, err

@@ -62,18 +62,7 @@
             </tbody>
         </table>
     </div>
-    <div class="row">
-        <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-format="fluid"
-            data-ad-layout-key="-fb+5w+4e-db+86"
-            data-ad-client="ca-pub-3022214826355647"
-            data-ad-slot="4820995579"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
-    <ul class="pagination center">
+   <ul class="pagination center">
         <li {{ if .Pagination.HasPrev }}class="waves-effect waves-red"{{ else }}class="disabled"{{ end }}>
             <a href="/fund/managers?page_num=1&page_size={{ .Params.PageSize }}&sort={{ .Params.Sort }}&min_working_years={{ .Params.MinWorkingYears }}&min_yieldse={{ .Params.MinYieldse }}&max_current_fund_count={{ .Params.MaxCurrentFundCount }}&min_scale={{ .Params.MinScale }}&fund_type={{ .Params.FundType }}"><i class="material-icons">first_page</i></a>
         </li>

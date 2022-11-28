@@ -69,7 +69,7 @@ func (e EastMoney) QueryOrgRating(ctx context.Context, secuCode string) (OrgRati
 	latency := time.Now().Sub(beginTime).Milliseconds()
 	logging.Debug(ctx, "EastMoney QueryOrgRating "+apiurl+" end",
 		zap.Int64("latency(ms)", latency),
-		// zap.Any("resp", resp),
+		zap.Any("resp", resp),
 	)
 	if err != nil {
 		return nil, err

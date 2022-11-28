@@ -47,7 +47,7 @@ func (e EastMoney) QueryIndustryList(ctx context.Context) ([]string, error) {
 	latency := time.Now().Sub(beginTime).Milliseconds()
 	logging.Debug(ctx, "EastMoney IndustryList "+apiurl+" end",
 		zap.Int64("latency(ms)", latency),
-		// zap.Any("resp", resp),
+		zap.Any("resp", resp),
 	)
 	if err != nil {
 		return nil, err

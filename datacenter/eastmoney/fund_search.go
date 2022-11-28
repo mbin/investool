@@ -35,7 +35,7 @@ func (e EastMoney) SearchFund(ctx context.Context, kw string) (results []SearchF
 	latency := time.Now().Sub(beginTime).Milliseconds()
 	logging.Debug(ctx, "EastMoney SearchFund "+apiurl+" end",
 		zap.Int64("latency(ms)", latency),
-		// zap.Any("resp", strresp),
+		zap.Any("resp", strresp),
 	)
 	if err != nil {
 		return nil, err
